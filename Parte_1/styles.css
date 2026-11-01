@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    background-color: rgb(131, 170, 255);
+    color: black;
+    margin: 0;
+    padding: 5px;
+}
+
+p{
+    margin: 10px;
+}
+
+h2{
+    margin: 10px;
+}
+
+.ContenedorPrincipal div{
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+
+.TituloPensamientoLogico{
+    text-align: center;
+}
+
+.PensamientoLogico {
+    background-color: rgb(132, 0, 255);
+    border: 2px solid black;
+    border-radius: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 2%;
+    color: white;
+}
+
+.PensamientoLogico ul, .PensamientoLogico ol{
+    list-style: decimal;
+    background-color: darkcyan;
+    margin: 15px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 2px solid black;
+    border-radius: 22px;
+    box-shadow: -3px 0px 1px cyan;
+    color: white;
+}
+
+.PensamientoLogico strong{
+    color: greenyellow;
+}
+
+.OperadoresLogicos{
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 22px;
+    border: 2px solid black;
+    margin-bottom: 2%;
+}
+
+.OperadoresLogicos h2{
+    text-align: center;
+}
+
+.OperadoresLogicos caption, .OperadoresLogicos thead, .OperadoresLogicos tr, .OperadoresLogicos th, .OperadoresLogicos td, .OperadoresLogicos tbody{
+    border: 1px solid black;
+    background-color: rgb(216, 216, 216);
+    padding: 10px;
+    font-size: 7px;
+}
+
+.OperadoresLogicos td{
+    text-align: center;
+}
+
+.OperadoresLogicos strong{
+    color: red;
+}
+
+.IntroduccionPseint{
+    border: 2px solid black;
+    border-radius: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 2%;
+    color: white;
+    background-color: rgb(54, 54, 131);
+    text-shadow: 2px 2px 10px black;
+}
+
+.Pasos{
+    display: flex; 
+    align-items: center; 
+    color: white;
+    gap: 10px;
+}
+
+.PasoAPaso a{
+    color: white;
+    text-decoration: none;
+}
+
+.PasoAPaso img{
+    width: 500px;
+}
+
+.PasoAPaso a:hover{
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+.Hola_Mundo{
+    background-color: green;
+    color: white;
+    border: 2px solid black;
+    border-radius: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 2%;
+}
+
+.Variables{
+    background-color: aquamarine;
+    border: 2px solid black;
+    border-radius: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.DatosEnPantalla{
+    background-color: rgb(68, 112, 113);
+    color: white;
+    border: 2px solid black;
+    border-radius: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.EntradasDeUsuario{
+    background-color: crimson;
+    border: 2px solid black;
+    color: white;
+    border-radius: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.Ejercicios{
+    background-color: black;
+    border: 2px solid black;
+    color: green;
+    border-radius: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.Condicionales, .Bucles, .EstructurasDeDatos, .Funciones{
+    background-color: rgb(54, 54, 131);
+    border: 2px solid black;
+    color: white;
+    border-radius: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

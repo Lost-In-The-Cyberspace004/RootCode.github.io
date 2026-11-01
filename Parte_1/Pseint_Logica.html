@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 1: Introduccion a la programacion</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="ContenedorPrincipal">
+
+        <div class="PensamientoLogico">
+            <div class="TituloPensamientoLogico">
+                <h2>
+                    Pensamiento logico
+                </h2>
+            </div>
+            <p>
+                En el mundo de la programacion para poder solucionar un problema primero tenemos que razonar como lo
+                resolveriamos en la vida real.
+                <br>
+                En lo personal suelo usar la frase "divide y vencerás" y la estrategia del patito de goma.
+            </p>
+            <p>
+                Supongamos que queremos sumar 2 numeros. Tu como lo harias?
+                <br>
+                Eso depende de tu propio razonamiento pero vamos a ejemplificarlo:
+                <br>
+                Sabemos que la suma no es mas que la adicion de un valor numerico a otro valor numerico.
+                <br>
+                Es decir: Si tenemos 2 y queremos agregarle 2, entonces por pura logica sabemos que vamos a obtener el
+                doble del valor original: <strong>4</strong>
+            </p>
+            <p>
+                Otro ejemplo: Si yo a ti te dijera: <strong>Quiero que la palabra Momiji la inviertas</strong> como lo
+                harias?
+                <br>
+                Es un proceso bastante sencillo
+            </p>
+            <ul>
+                <li>
+                    Tenemos la palabra que es: <strong>Momiji</strong>
+                </li>
+                <li>
+                    Nos piden invertirla entonces empezamos desde su ultima letra hasta llegar a la primera.
+                </li>
+                <li>
+                    Obtenemos primero la <strong>i</strong>, luego la <strong>j</strong>, luego la <strong>i</strong> y
+                    asi sucesivamente
+                    hasta llegar a la primera letra
+                </li>
+            </ul>
+            <p>
+                El resultado final seria <strong>ijimom</strong>
+            </p>
+            <p>
+                De manera mas clara por si aun no te ha quedado del todo claro: Piensa en todo esto como una receta de
+                cocina.
+            </p>
+            <ul>
+                <li>
+                    No puedes hecharle la sal a una olla o caldero si aun no tienes nada en lo que se impregne
+                </li>
+                <li>
+                    Si hechas el agua, entonces el siguiente paso es hecharle algo comestible o algun condimento ya que
+                    la comida no va a aparecer de la nada
+                </li>
+                <li>
+                    Si no has encendido la estufa, el horno, la freidora etc... La comida no se va a cocer! va a quedar
+                    cruda!
+                </li>
+            </ul>
+            <p>
+                Ves como es de sencillo? No es nada complicado solo con saber que queremos encontrar y siguiendo una
+                serie de pasos logicos podemos llegar al resultado que deseamos.
+            </p>
+            <p>
+                Y es que en nuestro mundo las ciencias basicas se riguen por ese unico principio: <strong>El seguir una
+                    serie de pasos logicos</strong> tal como el ejemplo de la suma.
+            </p>
+            <p>
+                Hagamos 2 ejercicios de practica:
+            </p>
+            <ol>
+                <li>
+                    Determina si una de las siguientes palabras es palindroma: <strong>Radar</strong> y
+                    <strong>Papaya</strong>
+                </li>
+                <li>
+                    Dada una lista de numeros encuentra el numero mayor
+                </li>
+            </ol>
+            <h2>
+                Soluciones:
+            </h2>
+            <p>
+                1-) Una palabra palindroma no es mas que una palabra que se puede leer igual al derecho y al revés
+                <br>
+                Vamos a desglozar el primer ejercicio
+                <br>
+                Seguiremos la secuencia logica para que quede lo mas claro posible
+            </p>
+            <ol>
+                <li>
+                    Empezamos leyendo la primera palabra <strong>Radar</strong>
+                </li>
+                <li>
+                    Vamos a dividir la palabra en las letras que la componen: <strong>R A D A R</strong>
+                </li>
+                <li>
+                    Ahora vamos a posicionarnos en su ultima letra y leerla de derecha a izquierda: <strong>R A D A
+                        R</strong>
+                </li>
+                <li>
+                    La palabra es palindroma? SI! ES PALINDROMA! SI LEEMOS <strong>R A D A R</strong> de izquierda a
+                    derecha se va a leer igual que de derecha a izquierda <strong>R A D A R</strong>
+                </li>
+            </ol>
+
+            <p>
+                Ahora empezaremos con la siguiente palabra: <strong>Papaya</strong>
+            </p>
+
+            <ol>
+                <li>
+                    Empezaremos desde la ultima letra: <strong>A</strong>
+                </li>
+                <li>
+                    Luego empezamos a leer desde esa ultima letra: <strong>A Y A P A P</strong>
+                </li>
+                <li>
+                    La palabra es palindroma? NO! NO LO ES! YA QUE <strong>PAPAYA</strong> EMPIEZA DESDE LA
+                    <strong>A</strong> Y CONTINUA LA <strong>Y</strong>
+                </li>
+                <li>
+                    Papaya = Ayapap = No es palindroma
+                </li>
+            </ol>
+
+            <p>
+                2-) El segundo ejercicio nos dice que tenemos una lista de numeros y de el encontrar el numero mayor
+            </p>
+            <p>
+                [1, 2, 3, 12, 10, 50, 300, 33]
+                <br>
+                Empecemos:
+            </p>
+
+            <ol>
+                <li>
+                    Empezamos de manera ordenada aunque tambien se puede empezar desde el final
+                </li>
+                <li>
+                    1 es el primer valor numerico seguido del 2
+                </li>
+                <li>
+                    Es el 1 mayor que el numero 2? NO! EL 2 ES MAYOR QUE EL 1! ENTONCES EL 1 QUEDA DESCARTADO! NO ES EL
+                    MAYOR!
+                </li>
+                <li>
+                    El 2 es mayor que el siguiente numero que es el 3? NO! EL 2 ES MENOR AL 3! EL 2 SALE DE LA LISTA!
+                </li>
+                <li>
+                    El 3 es mayor que el siguiente numero que es el 12? NO! EL 12 ES 4 VECES MAS GRANDE QUE EL 3! POR LO
+                    TANTO EL 3 SALE DE LA LISTA!
+                </li>
+                <li>
+                    El 12 es mayor que el siguiente numero que es el 10? NO! EL 12 ES MAYOR QUE EL 10! EL 10 SALE DE LA
+                    LISTA!
+                </li>
+                <li>
+                    El 12 entonces puede ser el numero mayor? NO! POR QUE DESPUES DEL 10 HAY MAS NUMEROS! TENEMOS QUE
+                    SEGUIR!
+                </li>
+                <li>
+                    El 12 es mayor que el siguiente numero que es el 50? NO! EL 12 SE QUEDA MUY LEJOS FRENTE AL 50! EL
+                    12 SALE!
+                </li>
+                <li>
+                    Continuamos con el siguiente numero: Es el 50 mayor que 300? NO! EL 50 ES 6 VECES INFERIOR FRENTE AL
+                    300!
+                </li>
+                <li>
+                    Es entonces el 300 el numero mayor de la lista? AUN NO PODEMOS SABERLO YA QUE TENEMOS UN ULTIMO
+                    NUMERO!
+                </li>
+                <li>
+                    El 33 es mayor que el 300? NO! EL 33 ES MAS PEQUE QUE EL 300!
+                </li>
+                <li>
+                    Es entonces el 300 el numero mayor de la lista? ES CORRECTO! YA QUE COMPARATIVAMENTE FRENTE A LOS
+                    OTROS NUMEROS EL 300 ES EL MAYOR! ADEMÁS DE QUE YA NO HAY MAS NUMEROS QUE COMPARAR!
+                </li>
+            </ol>
+            <p>
+                Resultado: <strong>El 300 es el numero mas grande de la lista</strong>
+            </p>
+            <hr>
+            <p>
+                Y con esto ya hemos llegado al final del primer tema a aprender.
+                <br>
+                Que hemos aprendido?
+            </p>
+            <ul>
+                <li>
+                    Entender el problema
+                </li>
+                <li>
+                    Extraer las partes que lo componen
+                </li>
+                <li>
+                    Encontrar que se necesita
+                </li>
+                <li>
+                    Dividir el problema en secuencias logicas
+                </li>
+                <li>
+                    Seguir esas secuencias logicas hasta llegar al resultado deseado!
+                </li>
+            </ul>
+            <p>
+                Ahora que ya hemos terminado esta primera parte ahora pasaremos al manejo de operadores logicos
+            </p>
+        </div>
+
+        <div class="OperadoresLogicos">
+            <h2>
+                Operadores logicos
+            </h2>
+            <p>
+                Los operadores logicos son compuertas que se usan en la informatica para determinar si algo esta
+                ocurriendo si esta sucediendo
+                <br>
+                A nivel de silicio: Los operadores logicos son la forma en la que representamos el paso o el bloqueo de
+                voltajes dentro de la placa de la computadora
+                <br>
+                A mas alto nivel los usamos para determinar condiciones (<strong>Luego vemos que es una
+                    condicion</strong>)
+            </p>
+            <div class="ContenedorTabla"
+                style="display: flex; justify-content: center; align-items: center; margin: 1%;">
+                <table>
+                    <caption>
+                        Operadores logicos
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>
+                                AND
+                            </th>
+                            <th>
+                                OR
+                            </th>
+                            <th>
+                                NOT
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                El operador Y
+                            </td>
+                            <td>
+                                El operador O
+                            </td>
+                            <td>
+                                El operador NO
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                El operador <strong>Y</strong> lo usamos dentro de una seccion que aprenderemos en un
+                                futuro llamados <strong>condicionales</strong>
+                                <br>
+                                De manera breve y clara se usa para especificar o saber si 2 cosas ocurren al mismo
+                                tiempo: "Si vamos a ducharnos debemos tener agua <strong>Y (AND)</strong> jabón"
+                            </td>
+                            <td>
+                                El operador <strong>O</strong> lo usamos dentro de una seccion que aprenderemos en un
+                                futuro llamados <strong>condicionales</strong>
+                                <br>
+                                De manera breve y clara se usa para especificar o saber si una condicion se cumple o se
+                                cumple una secundaria si la primera no se cumple
+                                <br>
+                                "Vas a salir a la calle con shorts <strong>O (OR)</strong> con jeans?"
+                            </td>
+                            <td>
+                                El operador <strong>NO</strong> lo usamos dentro de una seccion que aprenderemos en un
+                                futuro llamados <strong>condicionales</strong>
+                                <br>
+                                De manera breve y clara se puede decir que es "Lo contrario", es decir: invertimos el
+                                valor verdadero o falso de algo.
+                                <br>
+                                Se que suena confuso pero mira el ejemplo abajo:
+                                <br>
+                                "Si el usuario <strong>NO (NOT)</strong> esta logueado, entonces debe iniciar sesion"
+                                <br>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <p>
+                    Una vez ya tenemos clara la parte de los operadores logicos
+                    <br>
+                    Que en resumen solo son compuertas logicas que se usan para determinar si algo ocurre, se cumple o
+                    no
+                    <br>
+                    Ya podemos pasar a nuestra siguiente fase: <strong>LOS OPERADORES MATEMATICOS</strong>
+                </p>
+            </div>
+
+            <hr>
+            <div class="OperadoresMatematicos">
+                <p>
+                    Los operadores matematicos son los simbolos que usamos en las matematicas al momento de operar, sin
+                    embargo con un par de reglas extra y con un par de simbolos extras que nos facilitan el trabajo al
+                    momento de operar numeros.
+                </p>
+                <div class="ContenedorTabla"
+                    style="display: flex; justify-content: center; align-items: center; margin: 1%;">
+                    <table>
+                        <caption>
+                            Operadores numericos
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>
+                                    +
+                                </th>
+                                <th>
+                                    -
+                                </th>
+                                <th>
+                                    *
+                                </th>
+                                <th>
+                                    /
+                                </th>
+                                <th>
+                                    %
+                                </th>
+                                <th>
+                                    &lt;
+                                </th>
+                                <th>
+                                    &le;
+                                </th>
+                                <th>
+                                    &gt;
+                                </th>
+                                <th>
+                                    &ge;
+                                </th>
+                                <th>
+                                    ==
+                                </th>
+                                <th>
+                                    =
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Suma
+                                </td>
+                                <td>
+                                    Resta
+                                </td>
+                                <td>
+                                    Multiplicacion
+                                </td>
+                                <td>
+                                    Divicion
+                                </td>
+                                <td>
+                                    Modulo
+                                </td>
+                                <td>
+                                    Menor
+                                </td>
+                                <td>
+                                    Menor o igual que
+                                </td>
+                                <td>
+                                    Mayor
+                                </td>
+                                <td>
+                                    Mayor o igual que
+                                </td>
+                                <td>
+                                    Igual
+                                </td>
+                                <td>
+                                    Asignacion
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Como su nombre lo indica: Lo usamos para poder sumar valores numericos
+                                </td>
+                                <td>
+                                    Como su nombre lo indica: Lo usamos para restar valores numericos
+                                </td>
+                                <td>
+                                    Este operador lo usamos para multiplicar valores. A nivel logico una multiplicacion
+                                    solo es una suma repetida varias veces
+                                </td>
+                                <td>
+                                    Este signo nos permite operar diviciones
+                                </td>
+                                <td>
+                                    El operador de modulo lo usamos para encontrar el resto o residuo de una operacion.
+                                    Mas concreto una divicion.
+                                </td>
+                                <td>
+                                    Lo usamos para saber si un numero X es menor a un numero X
+                                </td>
+                                <td>
+                                    Lo usamos para saber si un numero X es menor o igual a un numero X
+                                </td>
+                                <td>
+                                    Lo usamos para saber si un numero X es mayor a un numero X
+                                </td>
+                                <td>
+                                    Lo usamos para saber si un numero X es mayor o igual a un numero X
+                                </td>
+                                <td>
+                                    El operador de igualdad lo usamos para saber si un numero es igual a otro numero. Su
+                                    forma es la union de 2 signos de asignacion
+                                </td>
+                                <td>
+                                    El operador de asignacion lo usamos para asignar un valor a algo
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>
+                    Si aun no los entiendes o sientes que no vas a encontrarle utilidad a esto pronto vas a entender
+                    para que sirven y como trabajar con ellos!
+                    <br>
+                    Asi que tranquilo~ solo quedate con que podemos trabajar con valores numericos
+                </p>
+                <br>
+            </div>
+
+        </div>
+
+        <div class="IntroduccionPseint">
+            <h2 style="text-align: center;">
+                Introduccion a Pseint - Instalacion de las herramientas
+            </h2>
+            <p>
+                Pseint es un lenguaje de pseudo-codigo usado en el mundo de la programacion para dar una introduccion a
+                los primeros que se inician en este mundo
+                <br>
+                Donde en vez de usar un lenguaje de programacion complejo con su sintaxis compleja y avanzada, se usa un
+                lenguaje con una sintaxis que esta en español para asi familiarizarnos en un futuro con lenguajes mas
+                complejos
+                <br>
+                <strong>Nota:</strong> como dato curioso pseint es de origen latinoamericano, mas concretamente de
+                origen <strong>Argentino</strong>
+            </p>
+            <p>
+                De manera breve solo quedate con que Pseint solo es un lenguaje de pseudo-codigo que usaremos para pulir
+                nuestra logica de programacion antes de pasar a lenguajes mas complejos. Cabe aclarar que no nos vamos a
+                centrar en las herramientas de Pseint ni en sus funciones como programa. Solo lo usaremos para ejecutar
+                codigo.
+                <br>
+                Si deseas aprender mas sobre la herramienta puedes consultar la pagina principal o buscar recursos en
+                internet
+            </p>
+            <hr>
+            <h2>
+                Instalacion de la herramienta
+            </h2>
+            <p>
+                Voy a ser bastante breve en esta parte ya que la idea es no perdernos en trivialidades o tecnicismos
+            </p>
+            <div class="PasoAPaso"
+                style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                <div class="Pasos">
+                    <p>Primero iremos a la pagina principal de pseint donde lo descargaremos: </p> <a
+                        href="https://pseint.sourceforge.net/"> Pagina</a>
+                </div>
+
+                <img src="../Imagenes/Pseint/Instalacion_1.png" alt="">
+
+                <div class="Pasos">
+                    <p>
+                        Vamos a seleccionar la opcion de windows aunque nosotros debemos seleccionar la del
+                        <strong>OS</strong> que usemos
+                    </p>
+                </div>
+
+                <img src="../Imagenes/Pseint/Instalacion_2.png" alt="">
+
+                <div class="Pasos">
+                    <p>
+                        Lo descargaremos, ya aqui es donde simplemente ubicaremos el instalador en nuestra PC
+                    </p>
+                </div>
+
+                <img src="../Imagenes/Pseint/Instalacion_3.png" alt="">
+
+                <div class="Pasos">
+                    <p>
+                        Una vez descargado el instalador. Ahora vamos a ejecutarlo como administrador para otorgar
+                        permisos
+                    </p>
+                </div>
+
+                <img src="../Imagenes/Pseint/Instalacion_4.png" alt="" style="width: 300px; height: 350px;">
+
+                <div class="Pasos">
+                    <p>
+                        En esta parte empezamos con la instalacion del programa
+                    </p>
+                </div>
+
+                <img src="../Imagenes/Pseint/Instalacion_5.png" alt="">
+
+                <div class="Pasos">
+                    <p>
+                        Aceptamos para poder continuar con el proceso de instalacion
+                    </p>
+                </div>
+
+                <img src="../Imagenes/Pseint/Instalacion_6.png" alt="">
+
+                <div class="Pasos">
+                    <p>
+                        Seleccionamos donde se instalara todo dentro de nuestra PC
+                    </p>
+                </div>
+
+                <img src="../Imagenes/Pseint/Instalacion_7.png" alt="">
+
+                <div class="Pasos">
+                    <p>
+                        Una vez especificamos donde instalarlo, continuamos y ya empieza el proceso de instalacion
+                    </p>
+                </div>
+
+                <img src="../Imagenes/Pseint/Instalacion_8.png" alt="">
+
+                <div class="Pasos">
+                    <p>
+                        Tras la instalacion simplemente ya podemos abrir el programa
+                    </p>
+                </div>
+
+                <img src="../Imagenes/Pseint/Instalacion_9.png" alt="">
+
+                <div class="Pasos">
+                    <p>
+                        Y asi es el programa ya abierto. El entorno donde empezaremos a trabajar
+                    </p>
+                </div>
+
+                <img src="../Imagenes/Pseint/Instalacion_10.png" alt="">
+            </div>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <p>
+                Y con esto, ya hemos terminado la introduccion a pseint y como instalar el entorno de trabajo. Vamos a
+                proceder con la siguiente etapa: <strong>VAMOS A ESCRIBIR NUESTRO PRIMER PROGRAMA! UN HOLA
+                    MUNDO!</strong>. Asi es como empezamos en esto.
+            </p>
+            <br>
+            <br>
+        </div>
+
+        <div class="Hola_Mundo">
+            <h2 style="text-align: center;">
+                Nuestro primer programa: Hola mundo
+            </h2>
+            <p>
+                Nuestro primer programa va a ser un hola mundo.
+                <br>
+                Dentro del mundo de la programacion: Cada vez que vamos a aprender en un nuevo lenguaje de programacion
+                hacemos un "Hola Mundo". Solo es un programa que muestra ese mensaje en pantalla y simplemente es una
+                forma de saber que todo esta bien configurado o instalado. Nada complicado ni dificil de entender,
+                solamente un mensaje en pantalla. Proseguimos.
+            </p>
+
+            <p>
+                Vamos a escribir el siguiente script. Para poder ejecutarlo debemos guardar el archivo y nombrarlo como
+                deseemos. En la parte inferior desglozamos cada parte de el.
+            </p>
+
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="../Imagenes/Pseint/codigo/Hola_Mundo.png" alt="" width="400px" height="200px">
+            </div>
+
+            <ol>
+                <li>
+                    <strong>Algoritmo</strong>: Es con lo que empezamos nuestro programa
+                </li>
+                <li>
+                    <strong>Hola_Mundo</strong>: Es el nombre del algoritmo, este nombre es independiente del nombre con
+                    el que guardamos el archivo
+                </li>
+                <li>
+                    <strong>Escribir</strong>: Las funcionalidades dentro de pseint se le llaman boton. Por lo que nos
+                    vamos a referir a estas cosas como "botones". El punto: El boton <strong>Escribir</strong> sirve
+                    para mostrar valores en pantalla
+                </li>
+                <li>
+                    <strong>"Hola mundo"</strong>: "Hola mundo" es el valor de tipo cadena de caracteres que queremos
+                    mostrar en patalla. <strong>Luego vemos este tema, a esto se le llama como tipos de datos y se verán
+                        en la siguiente seccion de variables</strong>
+                </li>
+                <li>
+                    <strong>FinAlgoritmo</strong>: Es lo que marca el final de nuestro programa, el que indica que el
+                    programa ha terminado y delimita hasta donde podemos programar
+                </li>
+            </ol>
+
+            <p>
+                Nuestra salida de datos será la siguiente:
+            </p>
+
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="../Imagenes/Pseint/codigo/Hola_Mundo_Mensaje.png" alt="" width="300px" height="200px">
+            </div>
+
+            <p>
+                Nada dificil verdad? es hora de continuar...
+            </p>
+
+        </div>
+
+        <div class="Variables">
+            <h2 style="text-align: center;">
+                Variables
+            </h2>
+            <p>
+                Vamos a ser breves y directos en esta parte ya que es algo corta en cuanto a su explicacion
+                <br>
+                Las variables no son mas que espacios en la memoria que usaremos para almacenar datos, datos con los que
+                posteriormente podemos trabajar, cambiar o eliminar
+            </p>
+            <p>
+                Piensa en una variable como una caja donde puedes almacenar cosas. Sin embargo hay que aclarar algo
+                antes de continuar
+            </p>
+            <hr>
+            <h3>
+                Tipos de datos
+            </h3>
+            <p>
+                Sabemos que una variable es un espacio en la memoria donde podemos guardar datos, pero debemos enseñarte
+                que es un tipo de dato:
+            </p>
+            <p>
+                Un tipo de dato es una forma en la que la computadora recibe un valor y esta lo interpreta
+            </p>
+            <p>
+                Si yo le paso a la computadora un <strong>1</strong> ella lo va a interpretar como un <strong>tipo de
+                    dato numerico de tipo entero</strong>
+            </p>
+            <p>
+                Ves como es de facil? Voy a ponerte los tipos de datos que manejamos en programacion y los que manejamos
+                en pseint
+            </p>
+            <ul>
+                <li>
+                    Enteros: Son aquellos valores numericos que no poseen coma o punto decimal <strong>1, 2, 3, 10, 11,
+                        45, 100, 100, 2600, 1500000</strong>. En lenguajes de programacion mas avanzados los declaramos
+                    como <strong>int</strong>
+                </li>
+                <li>
+                    Decimales / Flotantes: Son aquellos valores numericos que poseen coma o punto decimal <strong>1.2,
+                        45.67, 10.1, 2.2</strong>. En lenguajes de programacion mas avanzados los declaramos como
+                    <strong>Double o Float</strong>
+                </li>
+                <li>
+                    Booleanos: Los booleanos son un tipo de dato que solo puede estar en 2 estados unicos
+                    <strong>verdadero o falso</strong>. En programacion los declaramos como <strong>bool o
+                        boolean</strong>
+                </li>
+                <li>
+                    Caracteres: Los tipos de datos de caracteres son aquellos que solo pueden recibir un caracter. Cabe
+                    señalar que este tipo de dato tambien acepta simbolos o numeros PERO se deben declarar con
+                    <strong>'A', '1', '/'</strong> de lo contrario saltará error. En programacion los declaramos como
+                    <strong>char</strong>
+                </li>
+                <li>
+                    Cadena de caracteres: A diferencia de los caracteres que solo aceptan 1 solo valor, en las cadenas
+                    de caracteres recibe multiples valores ya que son como tal palabras: <strong>"Hola mundo", "Soy el
+                        fan N#1 de Momiji Inuashiri"</strong>. En programacion los declaramos como:
+                    <strong>string</strong>
+                </li>
+            </ul>
+
+            <hr>
+            <h3>
+                Ejemplos:
+            </h3>
+
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="../Imagenes/Pseint/codigo/Declaracion_De_Caracteres.png" alt=""
+                    style="width: 350px; height: 250px;">
+            </div>
+
+            <p>
+                De esta manera se declaran las variables en pseint. Las usaremos en todo momento para poder trabajar en
+                el desarrollo de cualquier programa que hagamos, ya que de ello depende el resultado que deseemos
+            </p>
+
+        </div>
+
+        <div class="DatosEnPantalla">
+            <h2 style="text-align: center;">
+                Datos en pantalla
+            </h2>
+            <p>
+                Los datos en pantalla es lo que nosotros podemos observar tras realizar una operacion.
+                Ya vimos de antemano como hacer algo asi: <strong>Mostrando un "Hola mundo"</strong> tras terminar de
+                ejecutarlo. Nada complicado
+            </p>
+            <p>
+                Vamos a ver un par de ejemplos. Cabe destacar que en este sitio no vamos a tratar el tema de los
+                errores. Seria bueno que lo aprendas en sitios mas especializados
+            </p>
+
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="../Imagenes/Pseint/codigo/DatosEnPantalla.png" alt="" style="width: 300px; height: 250px;">
+            </div>
+
+            <p>
+                Puedes observar que solo son algunas palabras en una ventana.
+                <br>
+                Como ya sabes: Para hacer eso simplemente usamos el boton <strong>Escribir</strong> para mostrar
+                contenido en la ventana. Esto tambien sirve para mostrar el contenido que se guarda dentro de las
+                variables
+            </p>
+
+        </div>
+
+        <div class="EntradasDeUsuario">
+            <h2 style="text-align: center;">
+                Entradas de usuario
+            </h2>
+
+            <p>
+                En un programa, el usuario es el cliente que va a usar nuestro programa por lo que los datos ingresados
+                va a ser por el
+            </p>
+
+            <p>
+                De manera breve: Los datos por defecto que nosotros ponemos no van a ser necesarios o algunos datos que
+                pondremos serán minimos en el funcionamiento del programa. Todo lo demás corre por el lado del cliente
+            </p>
+
+            <p>
+                Veamos esto con un ejemplo:
+            </p>
+
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="../Imagenes/Pseint/codigo/Entradas_De_Usuario.png" alt=""
+                    style="width: 350px; height: 100px;">
+            </div>
+
+            <ul>
+                <li>
+                    Escribir: Como ya sabemos el boton <strong>Escribir</strong> solo sirve para mostrar valores en
+                    pantalla. Sin embargo junto al siguiente boton se convierte en una entrada de usuario
+                </li>
+                <li>
+                    Leer: El boton leer sirve como complemento al boton <strong>Escribir</strong> para recibir un valor
+                    ingresado por el usuario y asignarlo a una variable
+                </li>
+                <li>
+                    propinaDejar: Es la variable que va a recibir el valor ingresado por el usuario
+                </li>
+            </ul>
+
+            <p>
+                En pocas palabras: <strong>Escribir y Leer</strong> nos va a permitir ingresar datos por teclado. Ojo,
+                el dato debe ser almacenado en alguna variable o este se perderá
+            </p>
+
+        </div>
+
+        <div class="Ejercicios">
+            <h2 style="text-align: center;">
+                Ejercicios - Parte 1
+            </h2>
+            <p>
+                Ahora que ya tenemos una buena base teorica ya podemos empezar a crear por nuestra cuenta. La lista de
+                ejercicios esta en la parte inferior
+            </p>
+            <ol>
+                <li>
+                    Se solicita un programa que pida al usuario su nombre, su edad y su ciudad
+                    <br>
+                    Luego por salida de pantalla se muestre un mensaje con logica donde se usen los datos solicitados
+                </li>
+                <li>
+                    Hacer un programa que realice la suma de 2 valores numericos y retorne por pantalla el resultado de
+                    esa operacion
+                </li>
+                <li>
+                    Construye un conversor de unidades. Para facilitar su creacion unicamente se va a convertir
+                    <strong>Metros</strong> a <strong>centimetros y milimetros</strong>
+                </li>
+                <li>
+                    Haz un programa que simule el pago de una cuenta y solicite un pago de propina. El valor del pago de
+                    la cuenta puede estar predeterminado en el codigo o solicitarlo al usuario
+                </li>
+                <li>
+                    Realiza un programa que calcule la edad del usuario retornado el resultado de la operacion
+                </li>
+            </ol>
+            <br>
+        </div>
+
+        <hr>
+
+        <div class="Condicionales">
+            <h2 style="text-align: center;">
+                Condicionales
+            </h2>
+
+            <p>
+                Bueno! ha sido un proceso largo tras los ejercicios no? puedes tomarte un respiro, ir a tomar agua,
+                enfriar tu cerebro o entretenerte con algo!
+            </p>
+            <p>
+                Ahora vamos a entrar a un nuevo tema de estudio: <strong>Los condicionales</strong>.
+            </p>
+            <p>
+                Los condicionales son estructuras de control que permiten la toma de desiciones dentro de un programa.
+                Como tu harias que si ocurre X cosa entonces ocurra esta X cosa?
+                <br>
+                Para eso existen los condicionales!. Si un usuario tiene 18 años entonces puede registrarse si no es asi
+                entonces no puede continuar
+            </p>
+            <p>
+                La estructura de un condicional es la siguiente
+            </p>
+
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="../Imagenes/Pseint/codigo/Condicionales.png" alt="">
+            </div>
+
+            <ul>
+                <li>
+                    Si: <strong>Si</strong> indica el inicio de la condicion. Cuando queremos referirnos a que algo pase
+                    siempre decimos "Si" seguido de lo que esperamos. Lo mismo pasa en un condicional
+                </li>
+                <li>
+                    cant_Numeros: Es la variable que usaremos, la base del condicional o como tal <strong>LA
+                        CONDICION</strong>
+                </li>
+                <li>
+                    El simbolo que aparece ahi es el ya conocido <strong>NOT</strong> seguido del valor que completa la
+                    condicion
+                </li>
+                <li>
+                    Entonces: Es la continuacion. Como ya explicamos antes <strong>Si X cosa, entonces</strong> el
+                    proceso logico y de pensamiento al momento de evaluar una condicion
+                </li>
+                <li>
+                    FinSi: Cuando se termina la condicion
+                </li>
+            </ul>
+
+            <p>
+                <strong>SI</strong> la variable cant_Numeros es diferente o <strong>NO ES</strong> 0,
+                <strong>ENTONCES</strong> mostramos el mensaje en pantalla
+            </p>
+
+            <p>
+                Cabe resaltar que durante las condiciones vamos a usar los operadores logicos y mas de una condicion.
+                Vamos a ejemplificarlo:
+            </p>
+
+            <ul>
+                <li>
+                    <strong>SI</strong> la variable <strong>EDAD</strong> tiene un valor mayor o igual que 18
+                    <strong>ENTONCES</strong> podemos continuar en el programa
+                </li>
+                <li>
+                    <strong>SI</strong> la variable <strong>COMPLETO</strong> contiene un valor en
+                    <strong>VERDADERO</strong> <strong>Y (AND)</strong> la variable <strong>APROBADO</strong> tiene un
+                    valor de <strong>VERDADERO</strong>, <strong>ENTONCES</strong> muestra por pantalla el mensaje
+                    <strong>Se ha aprobado tu solicitud</strong>
+                </li>
+            </ul>
+
+            <p>
+                Dentro de los condicionales tambien tenemos una elemento mas. El <strong>Sino</strong>, la usamos cuando
+                la condicion no se cumple y queremos realizar algo mas si no se cumple
+            </p>
+
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="../Imagenes/Pseint/codigo/Condicional_Si_Sino.png" alt="" width="270px" height="400px">
+            </div>
+
+            <p>
+                A diferencia de un lenguaje de programacion mas complejo y profesional donde usamos algo llamado
+                <strong>else if, elseif elif</strong>; acá en Pseint no tenemos algo asi. Debemos emularlo usando una
+                subrutina <strong>Sino</strong> con un condicional interno como se aprecia en la imagen
+            </p>
+
+            <p>
+                Continuemos con otro condicional: El condicional <strong>Segun</strong> funciona de manera similar al
+                condicional <strong>Si-Sino</strong> sin embargo esta es mas restrictiva ya que el valor del condicional
+                debe ser exacto o saltará error
+            </p>
+
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="../Imagenes/Pseint/codigo/Boton_Segun.png" alt="" style="width: 250px; height: 250px;">
+            </div>
+
+            <p>
+                El condicional <strong>Segun</strong> da un resultado dependiendo del contenido de la variable. Es
+                restrictivo ya que el valor debe ser exacto al de la condicion, no permite operadores logicos ni
+                operadores matematicos
+            </p>
+            <p>
+                En el ejemplo anterior como puedes ver el condicional es de un <strong>UNICO</strong> valor
+            </p>
+
+            <hr>
+            <p>
+                Ahora que ya hemos entendido como manejar todos los condicionales podemos pasar a las practicas!~
+            </p>
+
+            <br>
+        </div>
+
+        <div class="Ejercicios">
+            <h2 style="text-align: center;">
+                Ejercicios - Parte 2
+            </h2>
+
+            <p>
+                Muy bien, seré breve en esta parte ya que acá empezamos a tomar desiciones dentro de nuestro programa lo
+                que lo hace mas complejo e interesante
+            </p>
+
+            <ol>
+                <li>
+                    Dado un numero por el usuario, determinar si es par o impar. <strong>Nota: Para determinarlo usamos
+                        el operador de modulo "%"</strong>
+                </li>
+                <li>
+                    Solicita al usuario que ingrese su edad y catalogala de la siguiente forma
+                    <ol>
+                        <li>
+                            Si va de 0 a 17 es menor de edad
+                        </li>
+                        <li>
+                            Si va de 18 a 60 es un adulto
+                        </li>
+                        <li>
+                            Si es mas de 60 es un adulto mayor
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    Construye una calculadora que solicite al usuario el operador arimetico y realice la respectiva
+                    operacion, además del control de validaciones como la divicion entre 0
+                </li>
+                <li>
+                    Haz un programa que determine si un año es bisiesto. <strong>Nota: es bisiesto si es divisible entre
+                        4 pero no por 100 a menos que sea divicible entre 400</strong>
+                </li>
+                <li>
+                    Construir un programa que emule ser un validador de contraseña y usuario. Si es valida lanza el
+                    mensaje de "Accedido" si no es asi entonces muestra el mensaje de "denegado"
+                </li>
+            </ol>
+
+        </div>
+        <hr>
+
+        <div class="Bucles">
+            <h2 style="text-align: center;">
+                Bucles
+            </h2>
+
+            <p>
+                Los bucles son uno de los temas mas complicados al momento de aprender a programar pero es la comumna
+                vertebral detrás de muchas cosas dentro de los programas.
+                <br>
+                Para darte una idea: Los bucles nos ayudan dentro de la simulacion de conceptos fisicos o quimicos hasta
+                la ejecucion constante de un videojuego, ya que sin un bucle las operaciones que se deben estar
+                realizando cada segundo dentro de la computadora; no se podrian ejecutar correctamente
+                <br>
+                Asi de importantes son los bucles
+            </p>
+
+            <p>
+                Ya te he dicho lo importante que son los bucles pero... Que que son como tal los bucles?
+            </p>
+
+            <p>
+                Un bucle es una secuencia que se repite constantemente mientras una condicion sea verdadera hasta que su
+                condicion deje de serlo y pase a un valor en falso
+                <br>
+                De manera mas breve: Si X condicion se cumple entonces el bucle va a estar ejecutar hasta que la
+                condicion deje de cumplirse
+            </p>
+
+            <p>
+                Los bucles los usaremos en un futuro cuando estemos manejando listas como arrays unidimencionales o
+                arrays bidimencionales. Tambien cuando terminemos de dominar pseint usaremos bucles en un lenguaje mas
+                avanzado para visualizar de mejor forma todo esto
+                <br>
+                Por ahora quedate con que los bucles son muy importantes y los iremos viendo paso a paso
+            </p>
+
+            <h2>
+                Ejemplo de bucle
+            </h2>
+
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="../Imagenes/Pseint/codigo/Bucle_Mientras.png" alt="">
+            </div>
+
+            <p>
+                Voy a explicar ese fragmento de codigo
+            </p>
+
+            <ol>
+                <li>
+                    Declaramos una variable que va a contener un valor de 1
+                </li>
+                <li>
+                    Inicializamos el bucle con el boton <strong>MIENTRAS</strong>
+                </li>
+                <li>
+                    Seguido del condicional. Que nos dice el condicional? <strong>Si la variable declarada tiene un
+                        valor diferente de 12</strong>
+                </li>
+                <li>
+                    Pasamos a la parte interior del codigo, es decir el bloque. En su interior leemos el contenido de la
+                    variable declarada y mientras la condicion sea verdadera va a asignar en cada iteracion es decir en
+                    cada vuelta el valor de la variable mas 1 a esa misma variable
+
+                    <ol>
+                        <li>
+                            Si la variable vale 1, en la primera vuelta vale 1
+                        </li>
+                        <li>
+                            En la 2da vuelta vale 2 ya que en un principio vale uno y como estamos sumando 1 entonces
+                            pasa a tener ese valor. <strong>variable = variable + 1</strong> = 2
+                        </li>
+                        <li>
+                            Asi en adelante hasta que la condicion deje de ser cierta, es decir cuando sea igual a 12
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+
+            <hr>
+
+            <p>
+                Tenemos un 2do bucle y se podria decir que es el principal sobre todos los demás ya que tiene una
+                cantidad de funcionalidades mayor
+            </p>
+            <p>
+                El bucle <strong>Para</strong> o tambien conocido en otros lenguajes de programacion como el bucle
+                <strong>For</strong>
+            </p>
+
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="../Imagenes/Pseint/codigo/Bucle_for.png" alt="">
+            </div>
+
+            <p>
+                El bucle <strong>Para</strong> se usa cuando sabemos exactamente hasta donde queremos llegar. Muy usado
+                para recorrer listas.
+            </p>
+
+            <ol>
+                <li>
+                    Empieza desde la posicion <strong>1</strong> ya que es desde donde deseamos iniciar. Cabe resaltar
+                    que en cualquier lenguaje de programacion profesional vamos a empezar desde 0 ya que el 0 es una
+                    posicion valida dentro de cualquier lista o inicio de operaciones aparte y se puede operar con el, sin embargo acá empezamos desde 1 para mayor claridad
+                </li>
+                <li>
+                    <strong>Hasta</strong> nos indica nuestro final, es decir hasta donde debemos llegar para que se termine el bucle
+                </li>
+                <li>
+                    <strong>Con paso</strong> nos indica de cuanto en cuanto iremos iterando es decir en cuantas vueltas dentro del bucle vamos a trabajar. En este caso lo haremos de 1 en 1 aunque tambien podemos hacerlo de 10 en 10, en 2 en 2 y en general cualquier valor numerico
+                </li>
+                <li>
+                    <strong>Hacer</strong> para el inicio del bloque de codigo, es decir las instrucciones u operaciones que deseamos hacer, en este caso vamos a imprimir los numeros del 1 al 10
+                </li>
+                <li>
+                    <strong>FinPara</strong> marca el final del bucle y las operaciones
+                </li>
+            </ol>
+
+            <hr>
+
+            <p>
+                Continuamos con el ultimo bucle que poseemos dentro de la programacion: el bucle <strong>Repetir-Hasta_Que</strong> en lenguajes de programacion mas avanzados lo conocemos como bucle <strong>do-while</strong>. Lo usamos cuando necesitamos que se realice si o si una operacion y la condicion se verifique. Casi no se usa salvo en programas basados en terminal de comandos donde se agregan menus de opciones, sin embargo en lo personal yo uso el primer bucle y para operaciones mas complejas uso el 2do bucle.
+            </p>
+
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="../Imagenes/Pseint/codigo/Bucle_do-while.png" alt="">
+            </div>
+
+            <p>
+                El bucle anterior es mas sencillo de entender. Tiene un funcionamiento similar al del primer bucle sin embargo en este debemos primero ejecutar el bloque y luego se verifica la condicion
+            </p>
+
+            <ol>
+                <li>
+                    Inicializamos el bucle con <strong>Repetir</strong>
+                </li>
+                <li>
+                    Ponemos las instrucciones en su interior, desde la iteracion hasta la suma de los valores en la variable principal para asi ir incrementando los valores
+                </li>
+                <li>
+                    Luego ponemos el bendito <strong>CONDICIONAL</strong>
+                </li>
+            </ol>
+
+            <p>
+                En lo personal casi nunca uso este bucle, ya que no le encuentro un funcionamiento practico en las cosas
+                <br>
+                Quedate solo con los 2 primeros ya que son los mas fundamentales
+            </p>
+        </div>
+
+        <div class="Ejercicios">
+            <h2 style="text-align: center;">
+                Ejercicios - Parte 3
+            </h2>
+
+            <p>
+                Los ejercicios son bastante sencillos. En todo caso puedes comunicarte con el desarrollador para aclarar preguntas o dudas
+            </p>
+
+            <ol>
+                <li>
+                    Imprime los numeros del 1 al 100 usando un bucle
+                </li>
+                <li>
+                    Solicita al usuario un numero y genera su tabla de multiplicar
+                </li>
+                <li>
+                    Haz un programa que solicite una clave, cada vez que se falle la clave se repetirá la solicitud hasta que sea la correcta
+                </li>
+            </ol>
+        </div>
+
+        <hr>
+
+        <div class="EstructurasDeDatos">
+            <h2 style="text-align: center;">
+                Estructuras de datos
+            </h2>
+            <p>
+                Las estructuras de datos se usan en la programacion para almacenar multiples valores. Quedate con la idea de que son una <strong>lista</strong> de valores con las que podemos operar y trabajar. O como tal <strong>una variable muy grande y con muchos espacios especificados por nosotros</strong>. Nada dificil de entender!
+            </p>
+            <p>
+                Las estructuras de datos se pueden dividir en: <strong>unidimencionales, bidimencionales y multidimencionales</strong> aunque por lo general solo se usan las 2 primeras para mayor comodidad al programar. Sin embargo tengo que especificarte que depende totalmente de lo que debes hacer.
+                <br>
+                Algo mas: Para recorrer, observar u obtener el valor de una posicion dentro de una lista tenemos que usar un bucle
+            </p>
+
+            <hr>
+            <h2>
+                Unidimencionales:
+            </h2>
+
+            <p>
+                Las listas unidimencionales solo poseen una sola ilera de datos que se extiende de izquierda a derecha conteniendo sus valores en cada posicion dentro de la lista
+                <br>
+                [1, 2, 3, 4, 100, 200, 500, 600, 1000]
+                <br>
+                Al momento de crear una lista esta solo recibe datos de ese unico tipo de dato especificado
+            </p>
+
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="../Imagenes/Pseint/codigo/Arrays_Unidimencionales.png" alt="">
+            </div>
+
+            <hr>
+
+            <h2>
+                Bidimencionales
+            </h2>
+
+            <p> 
+                Los arrays bidimencionales estan compuestos por <strong>filas (de izquierda a derecha) y columnas (de arriba hacia abajo)</strong>. Cada espacio puede almacenar un valor. Para recorrer un array bidimencional usamos un bucle anidado, es decir un bucle dentro de otro bucle ya que las filas y las columnas se recorren de manera separada
+            </p>
+
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="../Imagenes/Pseint/codigo/Arrays_Bidimencionales.png" alt="">
+            </div>
+
+            <ol>
+                <li>
+                    Las dimenciones se especifican al momento de declarar la dimencion: <strong>Dimension NombreDimencion[Filas, Columnas]</strong>.
+                </li>
+                <li>
+                    En el ejemplo anterior declaramos la dimencion bidimencional con 2 filas y 2 columnas
+                </li>
+                <li>
+                    Durante la iteracion como ya especificamos antes, se usan bucles anidados
+                </li>
+            </ol>
+
+            <hr>
+
+            <h2>
+                Multidimencionales
+            </h2>
+
+            <p>
+                Las listas multidimencionales son listas en mas de 3 dimenciones. A diferencia de las bidimencionales que poseen filas y columnas, mientras que las multidimencionales ya se extienden a mas espacios en el fondob
+                 Estas listas se recorren usando multiples bucles anidados, dependiendo el nivel de dimenciones con el que se construya la lista.
+            </p>
+
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="../Imagenes/Pseint/codigo/Grafico_Arrays.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="Ejercicios">
+            <h2 style="text-align: center;">
+                Ejercicios - Parte 4
+            </h2>
+
+            <p>
+                Los siguientes ejercicios de listas son los que desarrollaremos. Recuerda que si no puedes realizarlos, comunicate con el desarrollador, accede al codigo que podrás encontrar en la parte inferior o busca mas recursos en internet
+            </p>
+
+            <ol>
+                <li>
+                    Llenar una lista con numeros aleatorios
+                </li>
+                <li>
+                    Dada una lista de numeros debemos encontrar la posicion del numero solicitado
+                </li>
+                <li>
+                    De una lista bidimencional sumamos los valores de la fila y la columna de manera separada. <strong>La final 1 suma: 15. La columna 1 suma: 20</strong> 
+                </li>
+            </ol>
+
+        </div>
+
+        <hr>
+
+        <div class="Funciones">
+            <h2 style="text-align: center;">
+                Funciones
+            </h2>
+
+            <p>
+                Las funciones son bloques de codigo que contienen instrucciones que se pueden llamar. Estos pueden o no retornar valores y a su vez estos pueden recibir o no recibir parametros, los parametros son las instrucciones que podemos o no pasarles por parentesis al momento de declarar la funcion. Estos datos son utilizados posteriormente para trabajarlos dentro de la funcion. Bastante sencillo de entender no? Veamos un par de ejemplos
+            </p>
+
+            <hr>
+            <h2>
+                Funciones con valores de retorno
+            </h2>
+
+            <p>
+                Las funciones con retornos se hacen cuando necesitamos retornar un valor o resultado dado por las operaciones internas de la funcion y operarlos en otras partes del codigo o programa 
+                <br>
+                Como vemos en este ejemplo: Vemos que retornamos la operacion de encontrar el area de un triangulo. El valor retornado podemos usarlo en otras funciones.
+            </p>
+
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="../Imagenes/Pseint/codigo/Funciones_ConRetorno.png" alt="" style="width: 500px; height: 300px;">
+            </div>
+
+            <hr>
+
+            <h2>
+                Funciones sin valores de retorno
+            </h2>
+
+            <p>
+                Son usadas para solo realizar una operacion interna sin necesidad de usar sus valores de retorno para el trabajo en otras partes del codigo. En lo personal lo uso simplemente para operar o trabajar en algo y solo llamarla al metodo principal y ver los resultados
+            </p>
+
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="../Imagenes/Pseint/codigo/FuncionesSinRetorno.png" alt="" style="width: 400px; height: 450px;">
+            </div>
+
+            <hr>
+
+            <h2>
+                Funciones sin parametros
+            </h2>
+
+            <p>
+                Las funciones sin parametros son aquellos que no reciben valores de ninguna parte de la parte del codigo y solo trabaja con lo que tenga en su interior. Otra forma en la que podemos llamar a las funciones sin parametros es: <strong>Subprocesos</strong>
+            </p>
+
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="../Imagenes/Pseint/codigo/FuncionesSinParametros.png" alt="" style="width: 400px; height: 400px;">
+            </div>
+            
+            <hr>
+
+            <h2>
+                Funciones con parametros
+            </h2>
+
+            <p>
+                Las funciones con parametros son aquellas funciones que reciben valores de manera externa y opera con ellos. Los parametros se pasan por los ya conocidos <strong>()</strong>
+            </p>
+
+            <div style="display: flex; justify-content: center; align-content: center;">
+                <img src="../Imagenes/Pseint/codigo/FuncionesConParametros.png" alt="" style="width: 400px; height: 450px;">
+            </div>
+
+        </div>
+
+        <div class="Ejercicios">
+
+            <h2 style="text-align: center;">
+                Ejercicios finales
+            </h2>
+            
+            <p>
+                Si has llegado hasta aquí dejame decirte: <strong>FELICIDADES</strong>, significa que has completado y entendido los conceptos principales dentro de la programacion, la realizacion de los ejercicios y la consolidacion de todo lo creado. Es de mi agrado informarte que en esta ultima parte realizaremos programas mas avanzados donde integraremos todo, además de que ya puedes solicitar tu certificado
+            </p>
+
+            <ol>
+                <li>
+                    Gestor de inventario: Un programa que permita modificar, encontrar y eliminar un elemento de una lista que emule ser un inventario
+                </li>
+                <li>
+                    Adivinador de numeros: Haz un programa que crea un numero aleatorio y el usuario debe adivinarlo, con el numero de intentos y el numero de aciertos
+                </li>
+                <li>
+                    Calculadora: Una calculadora basada en funciones que cuente con un historial de operaciones
+                </li>
+                <li>
+                    Gestor de agenda: Construye un programa que emule ser una agenda con los datos de los elementos guardados con la opcion de buscarlo y modificarlo
+                </li>
+                <li>
+                    Simulador de cajero automatico: Haz un programa que simule ser un cajero automatico. Con las opciones de agregar dinero, retirar dinero o enviar dinero
+                </li>
+            </ol>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
