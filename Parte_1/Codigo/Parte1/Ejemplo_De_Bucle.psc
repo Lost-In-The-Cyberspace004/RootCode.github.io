@@ -1,5 +1,0 @@
-Algoritmo Bucles
-	
-	
-	
-FinAlgoritmo
