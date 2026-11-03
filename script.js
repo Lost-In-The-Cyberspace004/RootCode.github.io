@@ -7,6 +7,8 @@ const ContenedorCurso = document.getElementById('Contenido');
 const IFrameContenidoCurso = document.getElementById('PaginaCurso');
 const PasarPartes = document.getElementById('Partes');
 
+const EnvioDeTrabajos = document.getElementById('BtnCorreo');
+
 
 class ContenidoDeLaPagina {
     constructor() {
@@ -45,16 +47,19 @@ class ContenidoDeLaPagina {
 
                 IFrameContenidoCurso.src = "Parte_1/Pseint_Logica.html";
 
-                PasarPartes.addEventListener('click', () => {
-                    
-                });
-
             } else if (this.PasarPartesCurso == 2) {
                 this.PasarPartesCurso = 0;
                 ContenedorCurso.style.display = "none";
             }
         });
     }
+
+    VerPasosParaEnviarTrabajos(){
+        EnvioDeTrabajos.addEventListener('click', () => {
+            
+        })
+    }
+
 }
 
 
